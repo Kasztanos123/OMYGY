@@ -7,7 +7,7 @@ function Login()
 
     if (username.lenght && password.lenght > 5) 
     {
-        window.location.href = "main.html";
+        window.location.href = "docs.html";
     }
 
 }
