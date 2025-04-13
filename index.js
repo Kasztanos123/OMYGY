@@ -1,13 +1,43 @@
+let nick = null;
+let password = null;
+
+let EditorMode = false;
+
 function Login()
 {
     let username =  document.getElementById("username-value").value;
     let password = document.getElementById("password-value").value;
     console.log(username + " " + password);
 
+    nick = username;
+    password = password;
 
-    if (username.lenght && password.lenght > 5) 
-    {
-        window.location.href = "docs.html";
-    }
+    window.location.href = "main.html";
+}
 
+
+function Settings()
+{
+    document.getElementById("notes").style.display = "none";
+    document.getElementById("settings").style.display = "flex";
+}
+
+function Notes()
+{
+    document.getElementById("settings").style.display = "none";
+    document.getElementById("notes").style.display = "block";
+    document.getElementById("menu-note").style.display = "none";
+}
+
+function Terminarz()
+{
+
+}
+
+function CreateNote()
+{
+    document.getElementById("notatka").style.display = "none";
+    document.getElementById("notes-created").style.display = "none";
+    document.getElementById("menu-note").style.display = "flex";
+    document.getElementById('editor').reset();
 }

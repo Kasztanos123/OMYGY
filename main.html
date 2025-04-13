@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduNotes</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+    <div id="container">
+
+        <div id="container-header">
+            <h1>Edu Notes</h1>
+        </div>
+
+        <div id="container-nav">
+            <button class="nav-item" onclick="Terminarz()">Terminarz</button>
+            <button class="nav-item " onclick="Notes()">Notatki</button>
+            <button class="nav-item" onclick="Settings()">Ustawienia</button>
+        </div>
+
+        <div id="container-main">
+            <div id="settings">
+                <div id="settings-header">
+                    <h1>Konto</h1>
+                </div>
+
+                <div id="settings-main">
+                    <h1>Wyświetlana Nazwa</h1>
+                    <p id="name">Thomasss21</p>
+
+                    <h2>Hasło</h2>
+                    <p id="password-text">***********</p>
+                    <button id="getpassword">Odsłoń</button>
+                </div>
+            </div>
+
+
+            <div id="notes">
+
+                <div id="menu-note">
+                    <div id="menu-header">
+                        <button id="save">Zapisz</button>
+                        <div id="editor" contenteditable="true">
+                            Przykładowy Tekst
+                        </div>
+                    </div>
+                </div>
+
+                <div id="notatka">
+                    <div id="center-notatka"><button onclick="CreateNote()">+</button></div>
+                </div>
+
+                <div id="notes-created">
+                    <div id="notes-created-header"><h1>Utworzone Notatki</h1></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
