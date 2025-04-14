@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=DynaPuff:wght@400..700&family=Funnel+Display:wght@300..800&family=Jolly+Lodger&family=Lexend:wght@100..900&family=Martian+Mono:wght@100..800&family=Rasa:ital,wght@0,300..700;1,300..700&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Rubik+Glitch&family=Sora:wght@100..800&display=swap');
+
+body {
+    background-color: rgb(26, 26, 26);
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin: 0;
+}
+
+#container {
+    width: 1900px;
+    background-color: rgb(26, 26, 26);
+    height: 930px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#container-header {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid;
+    border-color: rgb(100, 100, 100);
+}
+
+#container-header h1 {
+    color: aliceblue;
+    font-family: "DynaPuff", system-ui;
+    font-size: 46px;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: 0.8%;
+    margin-left: 1%;
+}
+
+#container-nav {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    height: 100%;
+    border-radius: 2px;
+    margin-left: 0.3%;
+}
+
+.nav-item {
+    transition: 0.5s ease;
+    width: 130%;
+    height: 50px;
+    background-color: rgb(40, 40, 40);
+    border: none;
+    border-radius: 30px;
+    margin-top: 15px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: rgb(225, 225, 225);
+}
+
+.nav-item:hover {
+    transition: 0.4s ease;
+    background-color: rgb(140, 140, 140);
+    box-shadow: 0 0 5px rgb(100, 100, 100);
+    cursor: pointer;
+}
+
+
+#container-main {
+    display: flex;
+    width: 1600px;
+    height: 830px;
+    margin-top:-48.5%;
+    margin-left: 14%;
+    margin-right: auto;
+    overflow: hidden;
+    background-color: rgb(30, 30, 30);
+    border: 1px solid;
+    border-color: rgb(40, 40, 40);
+}
+
+#settings {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+#settings-header {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid;
+    border-color: rgb(100, 100, 100);
+    text-align: center;
+}
+
+#settings-header h1 {
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    color: rgb(211, 211, 211);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#settings-main {
+    width: 100%;
+    height: 88%;
+}
+
+#settings-main h1 {
+    margin-top: 5%;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    color: rgb(211, 211, 211);
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+}
+
+#name {
+    width: max-content;
+    margin-top: 1%;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    color: rgb(211, 211, 211);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    width: 200px;
+    padding: 8px;
+    background-color: rgb(40, 40, 40);
+    border: 1px solid;
+    border-color: rgb(100, 100, 100);
+}
+
+#settings-main h2 {
+    margin-top: 2%;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    color: rgb(211, 211, 211);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#password-text {
+    margin-top: 1%;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    color: rgb(211, 211, 211);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    width: 200px;
+    padding: 8px;
+    background-color: rgb(40, 40, 40);
+    border: 1px solid;
+    border-color: rgb(100, 100, 100);
+}
+
+#getpassword {
+    margin-top: 1%;
+    transition: 0.3s ease;
+    padding: 10px;
+    font-size: 15px;
+    margin-left: 48%;
+    background-color: rgb(85, 85, 85);
+    color: rgb(225, 225, 225);
+    border-radius: 5px;
+    border: none;
+    opacity: 50%;
+}
+
+#getpassword:hover {
+    transition: 0.3s ease;
+    opacity: 80%;
+}
+
+
+/* notes */
+
+#notes {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#notatka {
+    display: flex;
+    width: 300px;
+    height: 350px;
+    border-radius: 5px;
+    background-color: rgb(37, 37, 37);
+    margin-left: 2%;
+    margin-top: 1%;
+    overflow: hidden;
+}
+
+#center-notatka {
+    width: 100%;
+    height: 100%;
+}
+
+#center-notatka button {
+    transition: 0.3s ease;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 40px;
+    color: rgb(225, 225, 225);
+}
+
+
+#center-notatka button:hover {
+    transition: 0.3s linear;
+    background-color: rgb(50, 50, 50);
+    cursor: pointer;
+}
+
+#notes-created {
+    display: block;
+    margin-top: 60px;
+    width: 100%;
+    height: auto;
+}
+
+#notes-created-header {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(40, 40, 40);
+    text-align: center;
+}
+
+#notes-created-header h1 {
+    margin-top: 0.5%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 26px;
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#menu-note {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+#menu-header {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(26, 26, 26);
+}
+
+#save {
+    width: 90px;
+    height: 30px;
+    font-size: 15px;
+    color: rgb(215, 215, 215);
+    margin-left: 0.5%;
+    margin-top: 0.65%;
+    background-color:rgb(40, 40, 40);
+    border: none;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+#editor {
+    margin-top: 1%;
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+    height: max-content;
+    color: rgb(200, 200, 200);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    outline: none;
+}
+ 
+  #Terminarz {
+    width: 90%;
+    max-width: 1200px;
+    max-height: 100vh;
+    padding: 40px;
+    box-sizing: border-box;
+    overflow: auto; 
+    color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: -4.5%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 6px;
+    background-color: transparent;
+    font-size: 15px;
+  }
+  
+  th, td {
+    background-color: #111;
+    border: 1px solid #444;
+    padding: 5px 12px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border-radius: 6px;
+  }
+  
+  th {
+    background-color: #222;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  tr:nth-child(even) td {
+    background-color: #1a1a1a;
+  }
+  
+  td:hover {
+    background-color: #2a2a2a;
+    transform: scale(1.03);
+    z-index: 2;
+    position: relative;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.15);
+  }
+  
+  .created-note {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: 0.3s;
+  }
+  .created-note:hover {
+    transform: scale(1.02);
+  }
