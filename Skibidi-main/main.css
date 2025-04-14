@@ -169,6 +169,7 @@ body {
 }
 
 #getpassword {
+    margin-top: 1%;
     transition: 0.3s ease;
     padding: 10px;
     font-size: 15px;
@@ -344,3 +345,10 @@ body {
     box-shadow: 0 0 8px rgba(255, 255, 255, 0.15);
   }
   
+  .created-note {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: 0.3s;
+  }
+  .created-note:hover {
+    transform: scale(1.02);
+  }

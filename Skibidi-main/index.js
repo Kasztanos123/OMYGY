@@ -17,6 +17,13 @@ function Login() {
     }
 }
 
+function SettingsUpdate()
+{
+    let storedPassword = localStorage.getItem(username);
+  
+}
+
+
 
 function Register() {
     let username = document.getElementById("username-value").value;
@@ -34,34 +41,17 @@ function Register() {
 }
 
 
-function Settings()
-{
-    document.getElementById("Terminarz").style.display = "none";
-    document.getElementById("notes").style.display = "none";
-    document.getElementById("settings").style.display = "flex";
-
-}
-
 function Notes()
 {
-    document.getElementById("Terminarz").style.display = "none";
-    document.getElementById("settings").style.display = "none";
-    document.getElementById("notes").style.display = "block";
-    document.getElementById("menu-note").style.display = "none";
-
+    window.location.href = "notesMenu.html";
 }
 
 function Terminarz()
 {
-    document.getElementById("notes").style.display = "none";
-    document.getElementById("settings").style.display = "none";
     document.getElementById("Terminarz").style.display = "flex";
 }
 
 function CreateNote()
 {
-    document.getElementById("notatka").style.display = "none";
-    document.getElementById("notes-created").style.display = "none";
-    document.getElementById("menu-note").style.display = "flex";
-    document.getElementById('editor').reset();
+    window.location.href = "notesMenu.html";
 }
